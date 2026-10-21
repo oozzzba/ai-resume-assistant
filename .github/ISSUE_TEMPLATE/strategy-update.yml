@@ -1,0 +1,42 @@
+name: 简历优化策略更新
+description: 提交一条待评审的 JD 简历优化策略更新。
+title: "[Strategy] "
+labels: ["strategy-update"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的问题
+      description: 说明当前策略在哪个 JD 或简历场景中失效、不足或需要扩展。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议规则
+      description: 写出可执行的规则、适用条件与不适用条件。不要填写真实简历或个人隐私。
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: 对应模块
+      options:
+        - 岗位定位
+        - 关键技能对齐
+        - 相关经历优先
+        - 成果导向改写
+        - 关键词证据化
+        - AI 项目表达
+        - 可选风险说明
+        - 投递前自查
+        - 新模块
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收方式
+      description: 描述更新后应如何验证效果，以及可能引入的错误风险。
+    validations:
+      required: true
